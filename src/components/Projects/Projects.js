@@ -9,7 +9,7 @@ import { Wrapper, Row, Left, Right } from './styles'
 
 export const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id='projects'>
       <Container>
         <TitleWithDescription
           title='projects'

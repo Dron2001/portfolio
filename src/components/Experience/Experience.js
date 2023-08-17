@@ -6,7 +6,7 @@ import { Wrapper, WorkWrapper, Work, Title, Description, Label } from './styles'
 
 export const Experience = () => {
   return (
-    <Wrapper>
+    <Wrapper id='experience'>
       <Container>
         <TitleWithDescription
           title='professional experience'

@@ -5,7 +5,7 @@ import { Wrapper, Body, Title, SubTitle } from './styles'
 
 export const Home = () => {
   return (
-    <Wrapper>
+    <Wrapper id='home'>
       <Body>
         <Title>hey, i'm andrii rudiuk</Title>
         <SubTitle>

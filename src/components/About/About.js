@@ -8,7 +8,7 @@ import { Wrapper, Bottom, AboutMe, Skills, Row, Skill } from './styles'
 
 export const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id='about'>
       <Container>
         <TitleWithDescription
           title='about me'

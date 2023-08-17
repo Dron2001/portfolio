@@ -22,7 +22,7 @@ export const Body = styled(Container)`
   justify-content: space-between;
 `;
 
-export const Logo = styled.span`
+export const Logo = styled.a`
   color: ${COLORS.grayLabel};
   font-size: 18px;
   text-transform: uppercase;
