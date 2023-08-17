@@ -1,0 +1,43 @@
+import styled from 'styled-components'
+import { Container } from '../../styles'
+import bgImage from '../../assets/images/bg.svg'
+
+export const Wrapper = styled.section`
+  background: linear-gradient(
+                to right,
+                rgba(245,245,245,.8),
+                rgba(245,245,245,.8)
+              ),
+              url(${bgImage});
+  height: 100vh;
+  /* min-height: 1250px; */
+  /* max-height: 1920px; */
+`;
+
+export const Body = styled(Container)`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Title = styled.h1`
+  font-size: 65px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111111;
+  font-weight: bold;
+  margin-top: 50px;
+`;
+
+export const SubTitle = styled.p`
+  color: #333333;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+  margin-top: 40px;
+  margin-bottom: 50px;
+`;
