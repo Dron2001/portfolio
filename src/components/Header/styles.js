@@ -10,9 +10,8 @@ export const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-  width: 100%;
-  position: fixed;
   top: 0;
+  position: sticky;
 `;
 
 export const Body = styled(Container)`
@@ -49,5 +48,9 @@ export const Label = styled.li`
 
   &:hover {
     color: ${COLORS.violet};
+  }
+
+  @media only screen and (max-width: 750px) {
+    margin-left: 30px;
   }
 `;

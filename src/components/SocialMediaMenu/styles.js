@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
   g {
     fill: ${COLORS.black};
   }
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const Link = styled.a`

@@ -8,6 +8,7 @@ import { Container } from 'styles'
 export const Wrapper = styled.section`
   background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(${bgImage});
   height: 100vh;
+  padding: 0 30px;
 `;
 
 export const Body = styled(Container)`
@@ -25,7 +26,11 @@ export const Title = styled.h1`
   text-align: center;
   color: ${COLORS.dark};
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: -100px;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 50px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -36,4 +41,5 @@ export const SubTitle = styled.p`
   line-height: 1.6;
   margin-top: 40px;
   margin-bottom: 50px;
+  max-width: 800px;
 `;
