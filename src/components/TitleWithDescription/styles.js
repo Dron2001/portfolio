@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,11 +13,11 @@ export const Title = styled.h2`
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #111111;
+  color: ${COLORS.dark};
 `;
 
 export const Line = styled.div`
-  background-color: #7843e9;
+  background-color: ${COLORS.violet};
   width: 50px;
   height: 5px;
   border-radius: 5px;
@@ -24,7 +25,7 @@ export const Line = styled.div`
 `;
 
 export const Description = styled.p`
-  color: #555444;
+  color: ${COLORS.grayDescription};
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;

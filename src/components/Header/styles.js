@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 import { Container } from 'styles'
 
 export const Wrapper = styled.header`
   box-shadow: 0 10px 100px rgba(0,0,0, 0.1);
-  background-color: #FFFFFF;
+  background-color: ${COLORS.white};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +23,7 @@ export const Body = styled(Container)`
 `;
 
 export const Logo = styled.span`
-  color: #333333;
+  color: ${COLORS.grayLabel};
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
@@ -38,7 +39,7 @@ export const Menu = styled.ul`
 
 export const Label = styled.li`
   font-size: 16px;
-  color: #333333;
+  color: ${COLORS.grayLabel};
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
@@ -47,6 +48,6 @@ export const Label = styled.li`
   transition: 0.3s;
 
   &:hover {
-    color: #7843e9;
+    color: ${COLORS.violet};
   }
 `;

@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
+import { COLORS } from 'constants/colors'
+
 export const Wrapper = styled.section`
   padding: 120px 0;
-  background-color: #FAFAFA;
+  background-color: ${COLORS.white2};
 `;
 
 export const Bottom = styled.div`
@@ -26,9 +28,9 @@ export const Row = styled.div`
 `;
 
 export const Skill = styled.div`
-  color: #666666;
+  color: ${COLORS.gray};
   font-weight: 600;
-  background: rgba(153,153,153, 0.2);
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   margin-right: 20px;
   font-size: 18px;

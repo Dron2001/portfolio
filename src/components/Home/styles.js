@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 import bgImage from 'assets/images/bg.svg'
 
@@ -22,13 +23,13 @@ export const Title = styled.h1`
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  color: #111111;
+  color: ${COLORS.dark};
   font-weight: bold;
   margin-top: 50px;
 `;
 
 export const SubTitle = styled.p`
-  color: #333333;
+  color: ${COLORS.grayLabel};
   font-size: 20px;
   text-align: center;
   width: 100%;

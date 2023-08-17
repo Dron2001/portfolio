@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.section`
-  background-color: #FAFAFA;
+  background-color: ${COLORS.white2};
   padding: 120px 0;
 `
 
@@ -13,7 +14,7 @@ export const WorkWrapper = styled.div`
 
 export const Work = styled.div`
   width: 47%;
-  background-color: #FFFFFF;
+  background-color: ${COLORS.white};
   border-radius: 5px;
   padding: 30px 28px;
 `
@@ -21,14 +22,14 @@ export const Work = styled.div`
 export const Title = styled.h3`
   font-size: 26px;
   font-weight: bold;
-  color: #111111;
+  color: ${COLORS.dark};
   margin-bottom: 20px;
 `;
 
 export const Description = styled.ul``;
 
 export const Label = styled.li`
-  color: #666666;
+  color: ${COLORS.gray};
   line-height: 1.3;
   font-size: 18px;
 `;

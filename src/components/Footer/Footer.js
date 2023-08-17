@@ -1,5 +1,5 @@
 import React from 'react'
-import { socialMedia } from 'constants/constants'
+import { SOCIAL_MEDIA } from 'constants/constants'
 
 import { ReactComponent as InstagramImage } from 'assets/images/instagram.svg'
 import { ReactComponent as LinkedinImage } from 'assets/images/linkedin.svg'
@@ -24,19 +24,19 @@ export const Footer = () => {
         <Block>
           <Title>social</Title>
 
-          <a href={socialMedia.instagram} target='blank'>
+          <a href={SOCIAL_MEDIA.instagram} target='blank'>
             <InstagramImage />
           </a>
 
-          <a href={socialMedia.linkedin} target='blank'>
+          <a href={SOCIAL_MEDIA.linkedin} target='blank'>
             <LinkedinImage />
           </a>
 
-          <a href={socialMedia.telegram} target='blank'>
+          <a href={SOCIAL_MEDIA.telegram} target='blank'>
             <TelegramImage />
           </a>
 
-          <a href={socialMedia.github} target='blank'>
+          <a href={SOCIAL_MEDIA.github} target='blank'>
             <GithubImage />
           </a>
         </Block>

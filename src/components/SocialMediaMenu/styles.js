@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.div`
   position: fixed;
   top: 40%;
   left: 0;
   transform: translateY(-50%);
-  background: #FFFFFF;
+  background: ${COLORS.white};
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
   padding: 5px;
 
   g {
-    fill: #000000;
+    fill: ${COLORS.black};
   }
 `;
 

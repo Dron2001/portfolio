@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.div`
-  background-color: #7843e9;
+  background-color: ${COLORS.violet};
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: ${COLORS.white};
   letter-spacing: 1px;
   font-weight: bold;
   border-radius: 5px;
