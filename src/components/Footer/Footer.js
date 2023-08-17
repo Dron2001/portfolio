@@ -1,8 +1,11 @@
 import React from 'react'
-import instagramImage from '../../assets/images/instagram.svg'
-import linkedinImage from '../../assets/images/linkedin.svg'
-import telegramImage from '../../assets/images/telegram.svg'
-import githubImage from '../../assets/images/github.svg'
+import { socialMedia } from 'constants/constants'
+
+import { ReactComponent as InstagramImage } from 'assets/images/instagram.svg'
+import { ReactComponent as LinkedinImage } from 'assets/images/linkedin.svg'
+import { ReactComponent as TelegramImage } from 'assets/images/telegram.svg'
+import { ReactComponent as GithubImage } from 'assets/images/github.svg'
+
 import { Wrapper, Body, Block, Title, Description } from './styles'
 
 export const Footer = () => {
@@ -21,10 +24,21 @@ export const Footer = () => {
         <Block>
           <Title>social</Title>
 
-          <img src={instagramImage} alt='instagram' />
-          <img src={linkedinImage} alt='linkedin' />
-          <img src={telegramImage} alt='telegram' />
-          <img src={githubImage} alt='github' />
+          <a href={socialMedia.instagram} target='blank'>
+            <InstagramImage />
+          </a>
+
+          <a href={socialMedia.linkedin} target='blank'>
+            <LinkedinImage />
+          </a>
+
+          <a href={socialMedia.telegram} target='blank'>
+            <TelegramImage />
+          </a>
+
+          <a href={socialMedia.github} target='blank'>
+            <GithubImage />
+          </a>
         </Block>
       </Body>
     </Wrapper>

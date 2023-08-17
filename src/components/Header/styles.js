@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Container } from '../../styles'
+
+import { Container } from 'styles'
 
 export const Wrapper = styled.header`
   box-shadow: 0 10px 100px rgba(0,0,0, 0.1);

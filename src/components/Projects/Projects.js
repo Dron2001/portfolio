@@ -1,8 +1,10 @@
 import React from 'react'
-import { TitleWithDescription } from '../TitleWithDescription/TitleWithDescription'
-import { SubTitleWithDescription } from '../SubTitleWithDescription/SubTitleWithDescription'
-import dopefolioImage from '../../assets/images/dopefolio.jpeg'
-import { Container } from '../../styles'
+import { TitleWithDescription } from 'components/TitleWithDescription/TitleWithDescription'
+import { SubTitleWithDescription } from 'components/SubTitleWithDescription/SubTitleWithDescription'
+
+import dopefolioImage from 'assets/images/dopefolio.jpeg'
+
+import { Container } from 'styles'
 import { Wrapper, Row, Left, Right } from './styles'
 
 export const Projects = () => {

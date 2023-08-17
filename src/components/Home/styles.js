@@ -1,17 +1,12 @@
 import styled from 'styled-components'
-import { Container } from '../../styles'
-import bgImage from '../../assets/images/bg.svg'
+
+import bgImage from 'assets/images/bg.svg'
+
+import { Container } from 'styles'
 
 export const Wrapper = styled.section`
-  background: linear-gradient(
-                to right,
-                rgba(245,245,245,.8),
-                rgba(245,245,245,.8)
-              ),
-              url(${bgImage});
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(${bgImage});
   height: 100vh;
-  /* min-height: 1250px; */
-  /* max-height: 1920px; */
 `;
 
 export const Body = styled(Container)`

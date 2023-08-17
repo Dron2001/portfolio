@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from '../Button/Button'
+import { Button } from 'components/Button/Button'
+
 import { Wrapper, Title, Description } from './styles'
 
 export const SubTitleWithDescription = ({ title, description, buttonLabel }) => {

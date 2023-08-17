@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from '../Button/Button'
+import { Button } from 'components/Button/Button'
+
 import { Wrapper, Body, Title, SubTitle } from './styles'
 
 export const Home = () => {
@@ -12,7 +13,7 @@ export const Home = () => {
           Applications that leads to the success of the overall product
         </SubTitle>
 
-        <Button>project</Button>
+        <Button>projects</Button>
       </Body>
     </Wrapper>
   )

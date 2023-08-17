@@ -1,8 +1,9 @@
 import React from 'react'
-import { TitleWithDescription } from '../TitleWithDescription/TitleWithDescription'
-import { SubTitleWithDescription } from '../SubTitleWithDescription/SubTitleWithDescription'
-import { Title } from '../SubTitleWithDescription/styles'
-import { Container } from '../../styles'
+import { TitleWithDescription } from 'components/TitleWithDescription/TitleWithDescription'
+import { SubTitleWithDescription } from 'components/SubTitleWithDescription/SubTitleWithDescription'
+import { Title } from 'components/SubTitleWithDescription/styles'
+
+import { Container } from 'styles'
 import { Wrapper, Bottom, AboutMe, Skills, Row, Skill } from './styles'
 
 export const About = () => {

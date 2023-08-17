@@ -1,6 +1,7 @@
 import React from 'react'
-import { TitleWithDescription } from '../TitleWithDescription/TitleWithDescription'
-import { Container } from '../../styles'
+import { TitleWithDescription } from 'components/TitleWithDescription/TitleWithDescription'
+
+import { Container } from 'styles'
 import { Wrapper, WorkWrapper, Work, Title, Description, Label } from './styles'
 
 export const Experience = () => {
