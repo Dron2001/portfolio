@@ -31,6 +31,10 @@ export const Title = styled.h1`
   @media only screen and (max-width: 1000px) {
     font-size: 50px;
   }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 40px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -42,4 +46,8 @@ export const SubTitle = styled.p`
   margin-top: 40px;
   margin-bottom: 50px;
   max-width: 800px;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 18px;
+  }
 `;

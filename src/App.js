@@ -16,10 +16,10 @@ export const App = () => {
 
       <Header />
       <Home />
-      {/* <About /> */}
-      {/* <Projects /> */}
-      {/* <Experience /> */}
-      {/* <Footer /> */}
+      <About />
+      <Projects />
+      <Experience />
+      <Footer />
     </>
   )
 }

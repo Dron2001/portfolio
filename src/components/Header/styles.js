@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 import { COLORS } from 'constants/colors'
 
+import { ReactComponent as CloseImage } from '../../assets/images/close.svg'
+import { ReactComponent as MenuImage } from '../../assets/images/menu.svg'
+
 import { Container } from 'styles'
 
 export const Wrapper = styled.header`
-  box-shadow: 0 10px 100px rgba(0,0,0, 0.1);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   background-color: ${COLORS.white};
   display: flex;
   align-items: center;
@@ -52,5 +55,27 @@ export const Label = styled.li`
 
   @media only screen and (max-width: 750px) {
     margin-left: 30px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const CloseIcon = styled(CloseImage)`
+  display: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+  }
+`;
+
+export const MenuIcon = styled(MenuImage)`
+  display: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
   }
 `;

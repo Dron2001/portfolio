@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   align-items: center;
   text-align: center;
   margin-bottom: 120px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 80px;
+  }
 `;
 
 export const Title = styled.h2`

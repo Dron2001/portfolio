@@ -3,7 +3,7 @@ import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.section`
   background-color: ${COLORS.white2};
-  padding: 120px 0;
+  padding: 120px 30px;
 `
 
 export const WorkWrapper = styled.div`
@@ -17,6 +17,10 @@ export const Work = styled.div`
   background-color: ${COLORS.white};
   border-radius: 5px;
   padding: 30px 28px;
+
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+  }
 `
 
 export const Title = styled.h3`

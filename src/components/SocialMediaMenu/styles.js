@@ -3,7 +3,7 @@ import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.div`
   position: fixed;
-  top: 40%;
+  top: 35%;
   left: 0;
   transform: translateY(-50%);
   background: ${COLORS.white};
