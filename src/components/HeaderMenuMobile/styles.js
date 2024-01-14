@@ -33,7 +33,7 @@ export const CloseIcon = styled(CloseImage)`
 `;
 
 export const Link = styled.div`
-  color: ${COLORS.white};
+  color: ${({ isactive }) => isactive ? COLORS.violet : COLORS.white};
   font-size: 28px;
   margin-bottom: 40px;
   cursor: pointer;

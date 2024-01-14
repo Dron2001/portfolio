@@ -41,7 +41,7 @@ export const Menu = styled.ul`
 
 export const Label = styled.li`
   font-size: 16px;
-  color: ${COLORS.grayLabel};
+  color: ${({ isactive }) => isactive ? COLORS.violet : COLORS.grayLabel};
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;

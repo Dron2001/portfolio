@@ -1,4 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
+import { scrollToSection } from 'utils/basic'
 import { Header } from 'components/Header/Header'
 import { Home } from 'components/Home/Home'
 import { About } from 'components/About/About'
@@ -10,6 +13,12 @@ import { SocialMediaMenu } from 'components/SocialMediaMenu/SocialMediaMenu'
 import './index.css'
 
 export const App = () => {
+  const { state } = useLocation()
+
+  useEffect(() => {
+    scrollToSection(state)
+  }, [state])
+
   return (
     <>
       <SocialMediaMenu />
