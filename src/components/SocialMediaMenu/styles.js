@@ -5,7 +5,7 @@ import { COLORS } from 'constants/colors'
 export const Wrapper = styled.div`
   position: fixed;
   top: 35%;
-  left: 0;
+  right: 0;
   transform: translateY(-50%);
   background: ${COLORS.white};
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
@@ -20,12 +20,7 @@ export const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 1000px) {
-    flex-direction: row;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: fit-content;
-    top: 113px;
+    display: none;
   }
 
   @media only screen and (max-width: 1000px) {
