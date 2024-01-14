@@ -4,3 +4,5 @@ export const SOCIAL_MEDIA = {
   telegram: 'https://t.me/Dron_7496',
   github: 'https://github.com/Dron2001',
 }
+
+export const LINKS_MENU = ['home', 'about', 'projects', 'experience']

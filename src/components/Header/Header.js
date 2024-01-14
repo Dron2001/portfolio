@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { scrollToSection } from 'utils/basic'
+import { LINKS_MENU } from 'constants/constants'
+import { HeaderMenuMobile } from 'components/HeaderMenuMobile/HeaderMenuMobile'
 
-import { Wrapper, Body, Logo, Menu, Label, CloseIcon, MenuIcon } from './styles'
+import { Wrapper, Body, Logo, Menu, Label, MenuIcon } from './styles'
 
 export const Header = () => {
   const [isMenu, setIsMenu] = useState(false)
@@ -9,19 +11,21 @@ export const Header = () => {
   const onChangeIsMenu = () => setIsMenu(prev => !prev)
 
   return (
-    <Wrapper>
-      <Body>
-        <Logo href='/'>andrii rudiuk</Logo>
+    <>
+      <Wrapper>
+        <Body>
+          <Logo href='/'>andrii rudiuk</Logo>
 
-        <Menu>
-          <Label onClick={() => scrollToSection('home')}>home</Label>
-          <Label onClick={() => scrollToSection('about')}>about</Label>
-          <Label onClick={() => scrollToSection('projects')}>projects</Label>
-          <Label onClick={() => scrollToSection('experience')}>experience</Label>
+          <Menu>
+            {LINKS_MENU.map(link => <Label key={link} onClick={() => scrollToSection(link)}>{link}</Label>)}
 
-          {isMenu ? <CloseIcon onClick={onChangeIsMenu} /> : <MenuIcon onClick={onChangeIsMenu} />}
-        </Menu>
-      </Body>
-    </Wrapper>
+            {!isMenu && <MenuIcon onClick={onChangeIsMenu} />}
+          </Menu>
+        </Body>
+
+      </Wrapper>
+
+      {isMenu && <HeaderMenuMobile onClose={onChangeIsMenu} />}
+    </>
   )
 }
