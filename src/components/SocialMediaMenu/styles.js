@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { COLORS } from 'constants/colors'
 
 export const Wrapper = styled.div`
@@ -19,7 +20,16 @@ export const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 1000px) {
-    display: none;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: fit-content;
+    top: 113px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    top: 124px;
   }
 `;
 

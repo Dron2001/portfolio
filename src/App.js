@@ -16,7 +16,7 @@ export const App = () => {
   const { state } = useLocation()
 
   useEffect(() => {
-    scrollToSection(state)
+    scrollToSection(state || 'home')
   }, [state])
 
   return (
