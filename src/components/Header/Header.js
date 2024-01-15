@@ -22,7 +22,7 @@ export const Header = () => {
     <>
       <Wrapper>
         <Body>
-          <Logo href='/'>andrii rudiuk</Logo>
+          <Logo href='/'>andrii rudiuk1</Logo>
 
           <Menu>
             {LINKS_MENU.map(link => (
